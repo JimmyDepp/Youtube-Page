@@ -44,4 +44,11 @@ header{
 .mid-section input{
     border-radius: 2px 0 0 2px;
     padding: 12px;
+    font-size: 1.6rem;
+
+}
+
+.mid-section button{
+    width: 64px;
+    
 }
