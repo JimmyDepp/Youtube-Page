@@ -24,3 +24,7 @@ header{
     align-items: center;
     cursor: pointer;
 }
+
+.left-section img{
+    width: 46%;
+}
