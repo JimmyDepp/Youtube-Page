@@ -33,7 +33,7 @@ header{
 .mid-section{
     display: flex;
     align-items: center;
-    padding: -30%;
+    padding: -30px;
 }
 
 .mid-section form{
