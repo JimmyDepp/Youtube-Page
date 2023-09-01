@@ -28,3 +28,19 @@ header{
 .left-section img{
     width: 46%;
 }
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    padding: -9%;
+}
+
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+
+.mid-section input{
+    width: 100%;
+}
