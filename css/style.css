@@ -142,11 +142,14 @@ nav p {
 /*start main*/
 main{
     font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    
 }
 main .profile{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    
 }
 main a{
     text-decoration: none;
