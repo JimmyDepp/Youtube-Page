@@ -75,6 +75,10 @@ header{
     margin-left: 10px;
 }
 
+.right-section{
+    display: flex;
+}
+
 .content-area {
     height: calc(100vh - 56px);
     background-color: #f9f9f9;
