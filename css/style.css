@@ -14,9 +14,6 @@ body {
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 56px;
 }
 
@@ -28,19 +25,18 @@ header{
 }
 
 .left-section img{
-    width: 46%;
+    width: 150px;
 }
 
 .mid-section{
     display: flex;
     align-items: center;
-    
 }
 
 .mid-section form{
     display: flex;
     height: 40px;
-    width: 580px;
+    width: 100%;
 }
 
 .mid-section input{
@@ -76,6 +72,7 @@ header{
 
 .right-section{
     display: flex;
+    
 }
 
 .content-area {
