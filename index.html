@@ -1,486 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="d-flex justify-content-between px-3">
-        <div class="left-section">
-          <div class="d-none d-lg-block pt-2">
-           <i class="material-icons logo">menu</i> 
-          </div>
-           <img class="ps-2" src="imgs/youtube-logo.png">
+      <div class="left-section">
+        <div class="d-none d-lg-block pt-2">
+          <i class="material-icons logo">menu</i>
         </div>
-        <div class="d-none d-md-block">
+        <img class="ps-2" src="imgs/youtube-logo.png" />
+      </div>
+      <div class="d-none d-md-block">
         <div class="mid-section">
-           <form action="">
-              <input class="w-100 border border-1 border-start-0" type="text" placeholder="Search" />
-              <button class="border border-1"><i class="material-icons logo">search</i></button>
-           </form>
-           <i class="material-icons mic rounded-circle">mic</i> 
+          <form action="">
+            <input
+              class="w-100 border border-1 border-start-0"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="border border-1">
+              <i class="material-icons logo">search</i>
+            </button>
+          </form>
+          <i class="material-icons mic rounded-circle">mic</i>
         </div>
-        </div>
-        <div class="right-section">
-            <a href=""><i class="material-icons pe-3 text-decoration-none text-dark">video_call</i></a>
-            <a href=""><i class="material-icons pe-3 text-decoration-none text-dark">apps</i></a>
-            <a href=""><i class="material-icons pe-3 text-decoration-none text-dark">notifications</i></a>
-            <a href=""><i class="material-icons pe-3 text-decoration-none text-dark">account_circle</i></a>
-         </div>
+      </div>
+      <div class="right-section">
+        <a href=""
+          ><i class="material-icons pe-3 text-decoration-none text-dark"
+            >video_call</i
+          ></a
+        >
+        <a href=""
+          ><i class="material-icons pe-3 text-decoration-none text-dark"
+            >apps</i
+          ></a
+        >
+        <a href=""
+          ><i class="material-icons pe-3 text-decoration-none text-dark"
+            >notifications</i
+          ></a
+        >
+        <a href=""
+          ><i class="material-icons pe-3 text-decoration-none text-dark"
+            >account_circle</i
+          ></a
+        >
+      </div>
     </header>
 
     <div class="content-area d-flex">
       <aside>
-         <nav class="d-flex flex-column">
-            <a href="#" class="nav-link active d-flex align-items-center text-dark">
-               <i class="material-icons pe-3 text-decoration-none text-dark">home</i>
-               <span id="active-span">Home</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">explore</i>
-               <span>Explore</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">subscriptions</i>
-               <span>Subscriptions</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">ondemand_video</i>
-               <span>Originals</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons pe-3 text-decoration-none text-dark">play_circle_outline</i>
-               <span>Youtube Music</span>
-            </a>
-            <hr>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons pe-3 text-decoration-none text-dark">video_library</i>
-               <span>Library</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons pe-3 text-decoration-none text-dark">history</i>
-               <span>History</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">smart_display</i>
-               <span>Your Videos</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">watch_later</i>
-               <span>Watch later</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">download</i>
-               <span>Downloads</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <i class="material-icons-outlined pe-3 text-decoration-none text-dark">thumb_up</i>
-               <span>Liked videos</span>
-            </a>
-            <hr>
-            <p>Subscriptions</p>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/3.jpg" class="channel-img" alt="">
-               <span>Mohamed Ayman</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/2.jpg" class="channel-img" alt="">
-               <span>Mohamed Hany</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/1.jpg" class="channel-img" alt="">
-               <span>Jimmy Depp</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/3.jpg" class="channel-img" alt="">
-               <span>Mohamed Ayman</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/2.jpg" class="channel-img" alt="">
-               <span>Mohamed Hany</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/1.jpg" class="channel-img" alt="">
-               <span>Jimmy Depp</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/3.jpg" class="channel-img" alt="">
-               <span>Mohamed Ayman</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/2.jpg" class="channel-img" alt="">
-               <span>Mohamed Hany</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/1.jpg" class="channel-img" alt="">
-               <span>Jimmy Depp</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/3.jpg" class="channel-img" alt="">
-               <span>Mohamed Ayman</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/2.jpg" class="channel-img" alt="">
-               <span>Mohamed Hany</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center text-dark">
-               <img src="imgs/1.jpg" class="channel-img" alt="">
-               <span>Jimmy Depp</span>
-            </a>
-         </nav>
+        <nav class="d-flex flex-column">
+          <a
+            href="#"
+            class="nav-link active d-flex align-items-center text-dark"
+          >
+            <i class="material-icons pe-3 text-decoration-none text-dark"
+              >home</i
+            >
+            <span id="active-span">Home</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >explore</i
+            >
+            <span>Explore</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >subscriptions</i
+            >
+            <span>Subscriptions</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >ondemand_video</i
+            >
+            <span>Originals</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i class="material-icons pe-3 text-decoration-none text-dark"
+              >play_circle_outline</i
+            >
+            <span>Youtube Music</span>
+          </a>
+          <hr />
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i class="material-icons pe-3 text-decoration-none text-dark"
+              >video_library</i
+            >
+            <span>Library</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i class="material-icons pe-3 text-decoration-none text-dark"
+              >history</i
+            >
+            <span>History</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >smart_display</i
+            >
+            <span>Your Videos</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >watch_later</i
+            >
+            <span>Watch later</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >download</i
+            >
+            <span>Downloads</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i
+              class="material-icons-outlined pe-3 text-decoration-none text-dark"
+              >thumb_up</i
+            >
+            <span>Liked videos</span>
+          </a>
+          <hr />
+          <p>Subscriptions</p>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/3.jpg" class="channel-img" alt="" />
+            <span>Mohamed Ayman</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/2.jpg" class="channel-img" alt="" />
+            <span>Mohamed Hany</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/1.jpg" class="channel-img" alt="" />
+            <span>Jimmy Depp</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/3.jpg" class="channel-img" alt="" />
+            <span>Mohamed Ayman</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/2.jpg" class="channel-img" alt="" />
+            <span>Mohamed Hany</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/1.jpg" class="channel-img" alt="" />
+            <span>Jimmy Depp</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/3.jpg" class="channel-img" alt="" />
+            <span>Mohamed Ayman</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/2.jpg" class="channel-img" alt="" />
+            <span>Mohamed Hany</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/1.jpg" class="channel-img" alt="" />
+            <span>Jimmy Depp</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/3.jpg" class="channel-img" alt="" />
+            <span>Mohamed Ayman</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/2.jpg" class="channel-img" alt="" />
+            <span>Mohamed Hany</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <img src="imgs/1.jpg" class="channel-img" alt="" />
+            <span>Jimmy Depp</span>
+          </a>
+        </nav>
       </aside>
       <!-- start main -->
       <main class="container-fluid p-5">
-         <div class="row row-cols-1 row-cols-md-5 g-4 ">
-            <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي الذهبي</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (3).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                    <a href=""> <p class="card-text"> Mahmoud Diaa - حطها في الجول يا ضياء</p></a>
-                    <span>13K views • 5 days ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                  <a href=""><img src="imgs/dr moustafa m.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان مع د. مصطفى محمود</h5></a>
-                    <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (2).jpg" alt=""></a>
-                    </div>
-                    <div class="col-10 py-2">
-                      <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
-                      <span>1.8M views • 3 years ago</span>
-                    </div>
-                 </div>
-               </div>
-             </div>
-            
-             <div class="col py-4">
-               <div class="card h-100  border border-0">
-                 <a href=""><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال </h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (1).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                     <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
-                     <span>179K views • 1 day ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             
-             <div class="col py-4">
-               <div class="card h-100 border border-0">
-                 <a href=""><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي والدعوة السرية بمكة</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (5).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2 ">
-                    <a href=""> <p class="card-text"> Ahmed Amer</p></a>
-                    <span>2M views • 2 years ago</span>
-                  </div>
-                 
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي
+                    الذهبي
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (3).jpg" alt=""
+                  /></a>
                 </div>
-               </div>
-             </div>
-          
-            
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title"> بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (4).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2">
-                    <a href=""> <p class="card-text">Film Gamed</p></a>
-                    <span>315K views • 1 month ago</span>
-                  </div>
-                 
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي الذهبي</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (3).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                    <a href=""> <p class="card-text"> Mahmoud Diaa - حطها في الجول يا ضياء</p></a>
-                    <span>13K views • 5 days ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                  <a href=""><img src="imgs/dr moustafa m.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان مع د. مصطفى محمود</h5></a>
-                    <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (2).jpg" alt=""></a>
-                    </div>
-                    <div class="col-10 py-2">
-                      <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
-                      <span>1.8M views • 3 years ago</span>
-                    </div>
-                 </div>
-               </div>
-             </div>
-            
-             <div class="col py-4">
-               <div class="card h-100  border border-0">
-                 <a href=""><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال </h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (1).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                     <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
-                     <span>179K views • 1 day ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             
-             <div class="col py-4">
-               <div class="card h-100 border border-0">
-                 <a href=""><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي والدعوة السرية بمكة</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (5).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2 ">
-                    <a href=""> <p class="card-text"> Ahmed Amer</p></a>
-                    <span>2M views • 2 years ago</span>
-                  </div>
-                 
+                <div class="col-10 py-2">
+                  <a href="">
+                    <p class="card-text">
+                      Mahmoud Diaa - حطها في الجول يا ضياء
+                    </p></a
+                  >
+                  <span>13K views • 5 days ago</span>
                 </div>
-               </div>
-             </div>
-          
-            
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title"> بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (4).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2">
-                    <a href=""> <p class="card-text">Film Gamed</p></a>
-                    <span>315K views • 1 month ago</span>
-                  </div>
-                 
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي الذهبي</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (3).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                    <a href=""> <p class="card-text"> Mahmoud Diaa - حطها في الجول يا ضياء</p></a>
-                    <span>13K views • 5 days ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                  <a href=""><img src="imgs/dr moustafa m.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان مع د. مصطفى محمود</h5></a>
-                    <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (2).jpg" alt=""></a>
-                    </div>
-                    <div class="col-10 py-2">
-                      <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
-                      <span>1.8M views • 3 years ago</span>
-                    </div>
-                 </div>
-               </div>
-             </div>
-            
-             <div class="col py-4">
-               <div class="card h-100  border border-0">
-                 <a href=""><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال </h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (1).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                     <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
-                     <span>179K views • 1 day ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             
-             <div class="col py-4">
-               <div class="card h-100 border border-0">
-                 <a href=""><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي والدعوة السرية بمكة</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (5).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2 ">
-                    <a href=""> <p class="card-text"> Ahmed Amer</p></a>
-                    <span>2M views • 2 years ago</span>
-                  </div>
-                 
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img
+                  src="imgs/dr moustafa m.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان
+                    مع د. مصطفى محمود
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (2).jpg" alt=""
+                  /></a>
                 </div>
-               </div>
-             </div>
-          
-            
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title"> بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (4).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2">
-                    <a href=""> <p class="card-text">Film Gamed</p></a>
-                    <span>315K views • 1 month ago</span>
-                  </div>
-                 
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي الذهبي</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (3).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                    <a href=""> <p class="card-text"> Mahmoud Diaa - حطها في الجول يا ضياء</p></a>
-                    <span>13K views • 5 days ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                  <a href=""><img src="imgs/dr moustafa m.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row ">
-                   <a href=""> <h5 class="card-title ">أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان مع د. مصطفى محمود</h5></a>
-                    <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (2).jpg" alt=""></a>
-                    </div>
-                    <div class="col-10 py-2">
-                      <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
-                      <span>1.8M views • 3 years ago</span>
-                    </div>
-                 </div>
-               </div>
-             </div>
-            
-             <div class="col py-4">
-               <div class="card h-100  border border-0">
-                 <a href=""><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال </h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (1).jpg" alt=""></a>
-                   </div>
-                   <div class="col-10 py-2">
-                     <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
-                     <span>179K views • 1 day ago</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             
-             <div class="col py-4">
-               <div class="card h-100 border border-0">
-                 <a href=""><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title">سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي والدعوة السرية بمكة</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (5).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2 ">
-                    <a href=""> <p class="card-text"> Ahmed Amer</p></a>
-                    <span>2M views • 2 years ago</span>
-                  </div>
-                 
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
+                  <span>1.8M views • 3 years ago</span>
                 </div>
-               </div>
-             </div>
-          
-            
-             <div class="col py-4">
-               <div class="card h-100 border border-0 ">
-                 <a href=""><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."></a>
-                 <div class="card-body row">
-                   <a href=""> <h5 class="card-title"> بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed</h5></a>
-                   <div class="col-2 py-2">
-                      <a href=""> <img class="profile " src="imgs/profile (4).jpg" alt=""></a>
-                   </div>
-                  <div class="col-10 py-2">
-                    <a href=""> <p class="card-text">Film Gamed</p></a>
-                    <span>315K views • 1 month ago</span>
-                  </div>
-                 
-                 </div>
-               </div>
-             </div>
-           
-            
-           
-         </div>
-        
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (1).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
+                  <span>179K views • 1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي
+                    والدعوة السرية بمكة
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (5).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Ahmed Amer</p></a>
+                  <span>2M views • 2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (4).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Film Gamed</p></a>
+                  <span>315K views • 1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي
+                    الذهبي
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (3).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href="">
+                    <p class="card-text">
+                      Mahmoud Diaa - حطها في الجول يا ضياء
+                    </p></a
+                  >
+                  <span>13K views • 5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img
+                  src="imgs/dr moustafa m.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان
+                    مع د. مصطفى محمود
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (2).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
+                  <span>1.8M views • 3 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (1).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
+                  <span>179K views • 1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي
+                    والدعوة السرية بمكة
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (5).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Ahmed Amer</p></a>
+                  <span>2M views • 2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (4).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Film Gamed</p></a>
+                  <span>315K views • 1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي
+                    الذهبي
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (3).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href="">
+                    <p class="card-text">
+                      Mahmoud Diaa - حطها في الجول يا ضياء
+                    </p></a
+                  >
+                  <span>13K views • 5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img
+                  src="imgs/dr moustafa m.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان
+                    مع د. مصطفى محمود
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (2).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
+                  <span>1.8M views • 3 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (1).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
+                  <span>179K views • 1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي
+                    والدعوة السرية بمكة
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (5).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Ahmed Amer</p></a>
+                  <span>2M views • 2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (4).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Film Gamed</p></a>
+                  <span>315K views • 1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/diaaaa.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    جول بريميرليج | افتكاسات أرتيتا.. وافتقاد سيتي للثنائي
+                    الذهبي
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (3).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href="">
+                    <p class="card-text">
+                      Mahmoud Diaa - حطها في الجول يا ضياء
+                    </p></a
+                  >
+                  <span>13K views • 5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img
+                  src="imgs/dr moustafa m.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    أين يقع سد يأجوج و مأجوج على الخريطة ؟ || من العلم والإيمان
+                    مع د. مصطفى محمود
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (2).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">قناة اقرأ الفضائية</p></a>
+                  <span>1.8M views • 3 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/erzaa3.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بودكاست رزع الجمهور | توقعات مجموعات دوري الابطال
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (1).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Erza3 - ارزع</p></a>
+                  <span>179K views • 1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/ahmed amer.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    سلسلة السيرة النبوية - الدرس الرابع - نزول الوحي علي النبي
+                    والدعوة السرية بمكة
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (5).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Ahmed Amer</p></a>
+                  <span>2M views • 2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col py-4">
+            <div class="card h-100 border border-0">
+              <a href=""
+                ><img src="imgs/film gamed.jpg" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body row">
+                <a href="">
+                  <h5 class="card-title">
+                    بدون حرق "Oppenheimer" مراجعة فيلم | Film gamed
+                  </h5></a
+                >
+                <div class="col-2 py-2">
+                  <a href="">
+                    <img class="profile" src="imgs/profile (4).jpg" alt=""
+                  /></a>
+                </div>
+                <div class="col-10 py-2">
+                  <a href=""> <p class="card-text">Film Gamed</p></a>
+                  <span>315K views • 1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!-- end main -->
     </div>
 
-
-    
-    
-    
-
-    
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
-</body>
+  </body>
 </html>
