@@ -24,19 +24,26 @@ header{
     margin-left: 20px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .left-section img{
     width: 150px;
 }
 
 .mid-section{
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 2px 0;
 }
 
 .mid-section form{
     display: flex;
-    height: 40px;
-    width: 100%;
+    width: 700px;
 }
 
 .mid-section input{
